@@ -1,6 +1,5 @@
 body{
     background-color: #C9C06D;
-    
     margin: 0%;
 }
 
@@ -8,16 +7,57 @@ body{
     
     padding-left: 0%;
     background: rgb(131, 185, 77);
-    height: 50px;
+    height: 60px;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: center;   
+    flex-direction: row;
     
 }
-.search{
+form{
+    margin: auto;
+    margin-top: 5px;
+}
+.about{
+    margin-top: 5px;
     border-radius: 15px;
     background: rgb(27, 101, 2);
-    width: 80%;
+    width: 45px;
     height: 45px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;   
+    flex-direction: row;
+    cursor: pointer;
 }
+input{
+    height: 24px;
+    outline: none;
+    background: rgb(131, 185, 77);
+    border: 1px solid #83b94d;
+    border-radius: 5px;
+    width: 90%;
+    margin:0%;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.button{
+    height: 24px;
+    background: rgb(131, 185, 77);
+    border: 1px solid #83b94d;
+    border-radius: 5px;
+}
+
+.triangle-button{
+    margin: auto;
+    height: 41px;
+    width: 32px;
+}
+.search{
+    margin-top: 5px;
+    border-radius: 15px;
+    background: rgb(27, 101, 2);
+    width: 90%;
+    height: 45px;
+    align-items: center;
+} 
