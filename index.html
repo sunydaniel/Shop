@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
+    
     <title>
       Бисквиты, да
     </title>
@@ -11,23 +12,30 @@
       <div class="tie"> 
         <div class="search">
           <form  action="" method="get">
-            <input name="s" placeholder="Искать здесь..." type="search">
-            <button class="button">Поиск</button>
+            <input class="TextSearch" name="s" placeholder="Искать здесь..." type="search" id="elastic">
+            <button class="SubmitForm">Поиск</button>
           </form>
         </div>
-        <div class="about-btn" onclick="">
-              <img class="triangle-button" src="triangle.svg">
+        <div class="about-btn" id="class-about-btn" onclick="">
+              <img class="menu-button" src="src/triangle.svg">
         </div> 
       </div>
-      </header>
+      <div class="popup" id="my-popup">
+        <img id="X-button" class="X-button"src="src/X.svg">
+        <div class="about" onclick="document.location='about.html'">
+          Про нас
+        </div>
       </div>
+      </header>
+
       <div class="menu">
         <p class="main-description">Бисквит – это вид кондитерского теста и получаемого из него изделия, 
           которое может быть основой для бисквитных тортов, пирожных, десертов. 
           Освоив классические рецепты бисквита, можно овладеть множеством рецептов выпечки.</p>
           <!-- Классический рецепт -->
-          <div class="biscuit" onclick="">
+          <div class="biscuit" onclick="document.location='classicCACKE.html'">
             <table>
+              <caption class="classic">Классический</caption>
               <tbody>
                 <tr>
                   <td>
@@ -46,8 +54,9 @@
             <div class="needful">яйца, мука, сахар, соль</div>
           </div>
           <!-- Шоколадный рецепт -->
-          <div class="biscuit" onclick="">
+          <div class="biscuit" onclick="document.location='chocolateCACKE.html'">
             <table>
+              <caption class="chocolate">Шоколадный</caption>
               <tbody>
                 <tr>
                   <td>
@@ -67,8 +76,10 @@
             </table>
             <div class="needful">яйца, сахар, мука, какао-порошок, разрыхлитель, яйца, сахар, мука, какао-порошок, разрыхлитель</div>
           </div>
-          <div class="biscuit" onclick="">
+
+          <div class="biscuit" onclick="document.location='tiramisuCACKE.html'">
             <table>
+              <caption class="tiramisu">Тирамису</caption>
               <tbody>
                 <tr>
                   <td>
@@ -88,8 +99,10 @@
             </table>
             <div class="needful">яйца, пудра сахарная, масло сливочное, мука, яйца, сахар, творог, сливки, кофе, сахар, вода, коньяк</div>
           </div>
-          <div class="biscuit" onclick="">
-            <table>
+
+          <div class="biscuit" onclick="document.location='castella.html'">
+            <table >
+              <caption class="castella">Кастелла</caption>
               <tbody>
                 <tr>
                   <td>
@@ -114,13 +127,7 @@
           </div>
       </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    
   </body>
 </html>
-        <!-- <div class="biscuit" onclick=""> 
-          <div class="description">Очень простой рецепт без использования разрыхлителя и соды. 
-                                            Только мука, яйца, сахар и небольшая щепотка соли. 
-                                            Именно такие ингредиенты используются для классического пышного
-          </div>
-          <div>
-          <img src="classic-biscuit.jpg"></div>
-          <div class="needful">яйца, мука, сахар, соль</div> -->

@@ -2,10 +2,11 @@ body{
     background-color: #C9C06D;
     margin: 0%;
     font-size: 15px;
+
 }
 
 .tie{
-
+    position: sticky;
     padding-left: 0%;
     background: rgb(131, 185, 77);
     height: 60px;
@@ -13,11 +14,12 @@ body{
     display: flex;
     justify-content: center;   
     flex-direction: row;
-    
+    z-index: 3;
 }
 form{
     margin: auto;
     margin-top: 5px;
+    margin-right: -2%;
 }
 .about-btn{
     margin-top: 5px;
@@ -37,20 +39,23 @@ input{
     background: rgb(131, 185, 77);
     border: 1px solid #83b94d;
     border-radius: 5px;
-    width: 90%;
+    width: 88%;
     margin:0%;
     margin-left: 25px;
     margin-top: 5px;
 }
-.button{
+.SubmitForm{
     height: 24px;
     background: rgb(131, 185, 77);
     border: 1px solid #83b94d;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 0%;
 }
 
-.triangle-button{
+
+
+.menu-button{
     margin: auto;
     height: 25px;
     width: 25px;
@@ -73,7 +78,17 @@ img{
     width: 229px;
     height: 136px;
 }
+.tableSquare{
 
+    width: 50%;
+    border: 350px ; 
+    margin: 0 auto; 
+    background-color:#1B6502;
+    justify-content: start;
+    border-radius: 5px;
+    padding: 1%;
+    color: #FFFFFF;
+}
 .menu{
     justify-content: center;
     margin-left: 10%;
@@ -105,5 +120,37 @@ img{
 }
 .credits{
     border: 1px solid #83b94d;
-    text-align:center;
+    text-align: center;
+}
+.popup{
+    background: #83B94D;
+    visibility: hidden;
+    margin-left: 88%;
+    margin-right: 2%;
+    justify-content: center;
+    color: white;
+    
+    opacity: 0;
+    z-index: 1;
+}
+.popup.show{
+
+    visibility: visible;
+
+    opacity: 1;
+}
+.X-button{
+    position: relative;
+    left: 70%;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.about{
+
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 5px;
+    background: rgb(27, 101, 2);
+    text-align: center;
 }

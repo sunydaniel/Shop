@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+    <title>
+      Классический Бисквит
+    </title>
+</head>
+<body>
+
+    <header>
+        <div class="tie"> 
+          <div class="search">
+            <form  action="" method="get">
+              <input class="TextSearch" name="s" placeholder="Искать здесь..." type="search" id="elastic">
+              <button class="SubmitForm">Поиск</button>
+            </form>
+          </div>
+          <div class="about-btn" id="class-about-btn" onclick="">
+                <img class="menu-button" src="src/triangle.svg">
+          </div> 
+        </div>
+        <div class="popup" id="my-popup">
+          <img id="X-button" class="X-button"src="src/X.svg">
+          <div class="about" onclick="document.location='about.html'">
+            Про нас
+          </div>
+        </div>
+    </header>
+    <div>
+      <div class="biscuit" style="cursor:auto">
+          <table>
+            <caption class="classic" style="font-size: larger;">Классический</caption>
+            <tbody>
+              <tr>
+                <td>
+                <img src="src/classic-biscuit.jpg">
+                </td>
+                <td>
+                  <div class="description" style="font-size: larger;">Очень простой рецепт без использования разрыхлителя и соды. 
+                    Только мука, яйца, сахар и небольшая щепотка соли. 
+                    Именно такие ингредиенты используются для классического пышного
+                  </div>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+          <div class="tableSquare">
+          <table style="font-size: larger;">
+            <caption>Продукты</caption>
+            <tbody>
+                <tr>
+                  <td style="background-color: #83b94d; font-size: larger;">
+                    Для торта диаметром 18-19 см, высотой 7,5 см
+                </tr>
+                <tr>
+                  <td style="font-size: larger;">
+                    Яйца С0 – 5 шт. (вес одного яйца со скорлупой – около 65 г)
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size: larger; background-color: #83b94d; font-size: larger;">
+                    Мука – 150 г (1 стакан ёмкостью 250 мл)
+                </tr>
+                <tr>
+                  <td style="font-size: larger;">
+                    Сахар – 150 г
+                  </td>
+                </tr>
+                <tr>
+                  <td style="font-size: larger; background-color: #83b94d; width: 50%;">
+                    Соль – 1 щепотка
+                </tr>
+            </tbody>
+            </table>
+          </div>
+          <p style="padding-left:5%;font-size: larger; color: white;">Видео рецепт:</p>
+        <div style="text-align: center; padding-bottom: 2%;">  
+          <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/AKqbJgMgN0c?si=uxnrWdBrV-ZTtqny" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+        
+    </div>
+</body>
+</html>
