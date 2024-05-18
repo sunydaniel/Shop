@@ -2,7 +2,7 @@ body{
     background-color: #C9C06D;
     margin: 0%;
     font-size: 15px;
-
+    
 }
 
 .tie{
@@ -39,9 +39,9 @@ input{
     background: rgb(131, 185, 77);
     border: 1px solid #83b94d;
     border-radius: 5px;
-    width: 88%;
+    width: 91%;
     margin:0%;
-    margin-left: 25px;
+    margin-left: 20px;
     margin-top: 5px;
 }
 .SubmitForm{
@@ -93,7 +93,7 @@ img{
     justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
-
+    perspective: 400px;
 }
 
 .biscuit{
@@ -152,5 +152,21 @@ img{
     margin-right: 2%;
     border-radius: 5px;
     background: rgb(27, 101, 2);
+
     text-align: center;
 }
+
+
+.SubmitForm::before {
+    transition: 0.3s ease-out;
+}
+.SubmitForm span {
+    color: #000000;
+
+    transition: 0.2s 0.1s;
+}
+.SubmitForm span:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.2s 0.1s;
+}
+  
